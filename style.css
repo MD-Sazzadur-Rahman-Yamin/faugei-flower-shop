@@ -27,7 +27,7 @@ section {
     color: black;
     font-size: 3.125rem;
     font-weight: 800;
-    font-family: font-family: "Noto Serif", serif;
+    font-family: "Noto Serif", serif;
     ;
 }
 
@@ -140,6 +140,19 @@ section {
     border: none;
 }
 
+/* Plants Lover Section */
+
+#plants-lover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.75rem;
+}
+
+.plants-lover-right h2,.plants-lover-right ul li{
+    margin: 10px 0px;
+}
+
 /* responsive media quary */
 
 @media screen and (max-width:992px) {
@@ -158,6 +171,11 @@ section {
 
     .our-plants-shop {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Plants Lover Section */
+    #plants-lover {
+        flex-direction: column;
     }
 }
 
