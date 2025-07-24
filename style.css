@@ -23,11 +23,19 @@ section {
     font-family: "Noto Serif", serif;
 }
 
+.section-tittle {
+    color: black;
+    font-size: 3.125rem;
+    font-weight: 800;
+    font-family: font-family: "Noto Serif", serif;
+    ;
+}
+
 .h-span {
     color: #E95A08;
 }
 
-p {
+.p {
     font-size: 1.375rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
@@ -65,13 +73,13 @@ p {
 #banner {
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     max-height: 28.75rem;
 }
 
 .banner-left,
 .banner-right {
-    width: 50%;
+    max-width: 50%;
 }
 
 .banner-left h1 {
@@ -84,22 +92,85 @@ p {
     width: 100%;
 }
 
-/* responsive media quary */
+/* Our plants section */
 
-@media screen and (max-width:576px) {
-    .nav-links{
-        visibility: hidden;
-    }
+.our-plants-content {
+    text-align: center;
+    margin-bottom: 3.125rem;
 }
 
+.our-plants-shop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5625rem;
+}
+
+.our-plants-shop-card-img {
+    margin-bottom: 1.875rem;
+}
+
+.our-plants-shop-card-img img {
+    width: 100%;
+}
+
+.our-plants-shop-card-content {
+    text-align: center;
+}
+
+.our-plants-shop-card-content h4,
+.our-plants-shop-card-content h5 {
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: #111111;
+    line-height: 150%;
+}
+
+.our-plants-shop-card-content h5 {
+    font-weight: 800;
+    margin-bottom: 1.875rem;
+}
+
+.cart-btn {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #E95A08;
+    padding: 1.625rem 3.125rem;
+    width: 100%;
+    border: none;
+}
+
+/* responsive media quary */
+
 @media screen and (max-width:992px) {
+
+    /* banner section */
     #banner {
         flex-direction: column-reverse;
     }
 
     .banner-left,
     .banner-right {
-        width: 100%;
+        max-width: 100%;
+    }
+
+    /* our plants section */
+
+    .our-plants-shop {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
+@media screen and (max-width:576px) {
+
+    /* nav section */
+    .nav-links {
+        display: none
+    }
+
+    /* our plants section */
+
+    .our-plants-shop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
