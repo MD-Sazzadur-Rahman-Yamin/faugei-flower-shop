@@ -1,0 +1,105 @@
+/* global styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    max-width: 1140px;
+    margin: auto;
+}
+
+section {
+    margin-top: 7.5rem;
+}
+
+.noto {
+    font-family: "Noto Serif", serif;
+}
+
+.h-span {
+    color: #E95A08;
+}
+
+p {
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* nav section */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 3rem;
+
+}
+
+/* Banner section */
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    max-height: 28.75rem;
+}
+
+.banner-left,
+.banner-right {
+    width: 50%;
+}
+
+.banner-left h1 {
+    font-size: 4.0625rem;
+    font-weight: 800;
+    color: black;
+}
+
+.banner-right img {
+    width: 100%;
+}
+
+/* responsive media quary */
+
+@media screen and (max-width:576px) {
+    .nav-links{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-left,
+    .banner-right {
+        width: 100%;
+    }
+}
+
