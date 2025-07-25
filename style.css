@@ -40,6 +40,7 @@ section {
     font-size: 1.375rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
 }
 
 /* nav section */
@@ -172,6 +173,76 @@ section {
     margin-left: 1.5rem;
 }
 
+/* Latest Deal Section */
+
+.latest-deal-content {
+    text-align: center;
+}
+
+
+.latest-deal-main {
+    display: grid;
+    grid-template-areas:
+        "bloom  zabo    zabo"
+        "ana    zabo    zabo"
+    ;
+    gap: 1.75rem;
+    margin-top: 7.5rem;
+}
+
+.bloom,
+.ana,
+.zabo {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+
+}
+
+.bloom {
+    background-image: url(./assets/deal-bloom.png);
+    grid-area: bloom;
+    height: 200px;
+}
+
+.ana {
+    background-image: url(./assets/deal-ana.png);
+    grid-area: ana;
+    height: 200px;
+}
+
+.zabo {
+    background-image: url(./assets/deal-zabo.png);
+    grid-area: zabo;
+    height: 428px;
+    border-radius: 24px;
+}
+
+.latest-deal-main {
+    text-align: center;
+}
+
+.latest-deal-main h6 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.zabo h6 {
+    font-size: 2.5rem;
+}
+
+.latest-deal-main a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    margin: 26px 50px;
+
+}
+
 /* Join Section */
 
 #join {
@@ -199,7 +270,7 @@ section {
     color: white;
 }
 
-.join-form input{
+.join-form input {
     display: inline-block;
 }
 
@@ -214,8 +285,11 @@ section {
     max-width: 40.25rem;
 }
 
-.join-form input[type="email"]{
-    
+.join-form input[type="submit"] {
+    color: white;
+    background-color: #E95A08;
+    border: none;
+    padding: 1.625rem 3.125rem;
 }
 
 /* ok */
@@ -265,7 +339,7 @@ section {
 
 @media screen and (max-width:992px) {
 
-    body{
+    body {
         padding: 1rem;
     }
 
@@ -294,8 +368,28 @@ section {
     .plants-lover-right {
         width: 100%;
     }
+
+    /* latest deal section */
+
+    .latest-deal-main {
+        grid-template-areas:
+            "bloom"
+            "ana"
+            "zabo"
+        ;
+    }
+
+    .zabo {
+        height: 200px;
+        border-radius: 14px;
+    }
+
+    .zabo h6 {
+    font-size: 1.25rem;
+}
+
     /* footer section */
-    .footer-container{
+    .footer-container {
         flex-direction: column;
     }
 }
