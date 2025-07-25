@@ -10,7 +10,8 @@
     font-weight: 400;
 }
 
-body {
+header,
+main {
     max-width: 1140px;
     margin: auto;
 }
@@ -149,13 +150,124 @@ section {
     gap: 3.75rem;
 }
 
-.plants-lover-right h2,.plants-lover-right ul li{
+.plants-lover-left img {
+    width: 100%;
+}
+
+.plants-lover-left,
+.plants-lover-right {
+    width: 50%;
+}
+
+.plants-lover-right h2,
+.plants-lover-right ul li {
     margin: 10px 0px;
+}
+
+.plants-lover-right h2 {
+    text-align: start;
+}
+
+.plants-lover-right ul {
+    margin-left: 1.5rem;
+}
+
+/* Join Section */
+
+#join {
+    background-image: url(./assets/news-letter-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.join-container {
+    margin: 12.5rem auto;
+    max-width: ;
+}
+
+.section-tittle,
+.join-form {
+    text-align: center;
+}
+
+#join .section-tittle {
+    text-align: center;
+    color: white;
+}
+
+.join-form input{
+    display: inline-block;
+}
+
+.join-form input[type="email"] {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    background-color: #FFFFFF;
+    padding: 0.5rem 1.25rem;
+    width: 72%;
+    max-width: 40.25rem;
+}
+
+.join-form input[type="email"]{
+    
+}
+
+/* ok */
+
+/* footer sectioin */
+
+#footer {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 1120px;
+    margin: auto;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+
+}
+
+.footer-nav li {
+    list-style: none;
+    margin: 1rem 0rem;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: rgba(107, 114, 128, 1);
+}
+
+.footer-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.brand,
+.footer-icons {
+    width: 25%;
+}
+
+..footer-nav {
+    width: 20%;
 }
 
 /* responsive media quary */
 
 @media screen and (max-width:992px) {
+
+    body{
+        padding: 1rem;
+    }
 
     /* banner section */
     #banner {
@@ -175,6 +287,15 @@ section {
 
     /* Plants Lover Section */
     #plants-lover {
+        flex-direction: column;
+    }
+
+    .plants-lover-left,
+    .plants-lover-right {
+        width: 100%;
+    }
+    /* footer section */
+    .footer-container{
         flex-direction: column;
     }
 }
